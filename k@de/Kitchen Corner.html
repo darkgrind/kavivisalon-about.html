@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "kitchen.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <title>Kitchen Corner</title>
+</head>
+<body>
+    <section>
+        <div class = "circle"></div>
+        <video autoplay loop muted plays-inline class = "video">
+            <source src = "kcq.mp4" type = "video/mp4">
+        </video>
+
+            <header>
+            <a href = "#"><video autoplay loop muted plays-inline class = "logo">
+                <source src = "kitchen.mp4">
+            </video></a>
+            <ul class = "nav">
+                <li><a href = "#">Home</a></li>
+                <li><a href = "menu.html">Menu</a></li>
+                <li><a href = "wines.html">Wines & Cocktails</a></li>
+                <li><a href = "smoke.html">Smoke 'n' Grill</a></li>
+                <li><a href = "about.html">About us</a></li>
+                <li><a href = "#"><button class = "login">Login
+
+                </button></a></li>
+            </ul>
+            </header>
+            <div class = "container">
+                <div class = "text-box">
+                    <h2>Grab your best pick</h2>
+                    <p>Feeling hungry and you don't know how or where to get food .Worry no more then kitchen corner's got your back</p>
+                    <a href = "#">Grab your bite</a>
+                </div>
+                <ul class = "me">
+                  <li><a href = "https://www.instagram.com/avantitoursrd/"><img src = "instagram.png" class = "ig"></a></li>
+                   <li><a href = "https://www.pinterest.com/"><img src = "pinterest.png" class = "p"></a></li>
+                  <li><a href = "https://www.facebook.com/"><img src = "facebook.png" class = "f"></a></li> 
+               </ul>
+                <!-- <div class = "box">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide" ><img src = "burgers.jpg"></div>
+                          <div class="swiper-slide" ><img src = "cheese.jpg"></div>
+                          <div class="swiper-slide" ><img src = "tequila.jpg"></div>
+                          <div class="swiper-slide" ><img src = "pilau.jpg"></div>
+                          <div class="swiper-slide" ><img src = "smoothy.jpg"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+           -->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'swiper/swiper-bundle.esm.js';
+        import 'swiper/swiper-bundle.css';
+        var swiper = new Swiper('.swiper', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+    
+</body>
+</html>
